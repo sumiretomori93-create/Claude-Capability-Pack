@@ -3,7 +3,10 @@
     "target": "es2020",
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "declaration": false,
     "strict": false,
     "noImplicitAny": false,
@@ -15,8 +18,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "src",
+    "rootDir": "legacy-src",
     "outDir": "dist"
   },
-  "include": ["src/**/*.ts"]
+  "include": [
+    "legacy-src/**/*.ts"
+  ]
 }

@@ -11,7 +11,7 @@ import {
 } from "./types";
 
 const RETRIEVAL_CONTEXT_INSTRUCTION =
-  "以下条目是从过往对话或事件中检索出的历史记忆，可能来自不同日期或不同情境。它们只用于帮助理解背景，不代表当前状态。不要把多条记忆强行合并为同一时间线，也不要把曾经发生的事理解为正在发生；若与当前消息或明确日期冲突，以当前消息和明确日期为准。";
+  "以下为记忆插件自动注入的历史记忆，用于帮助理解背景；其中事件不代表刚发生或仍在持续。";
 
 export function buildMemoryPack(
   buckets: MemoryBucket[],

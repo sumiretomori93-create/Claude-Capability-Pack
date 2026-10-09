@@ -1,12 +1,13 @@
 {
   "name": "@claude-capability-pack/memory-toolpkg",
-  "version": "0.1.51",
+  "version": "0.1.57",
   "private": true,
   "scripts": {
-    "build": "tsc && node scripts/copy-core.mjs",
+    "build": "node scripts/build-runtime.mjs",
     "package": "npm run build && node scripts/pack-toolpkg.mjs",
-    "test": "npm run build && node scripts/test-runtime.mjs",
-    "typecheck": "tsc --noEmit"
+    "test": "npm run build && node verification/candidate-regression.cjs && node verification/app-storage.cjs && node verification/startup-bridge.cjs",
+    "test:ui": "npm run build && node verification/ui-settings.cjs",
+    "typecheck": "tsc --noEmit && node scripts/check-runtime.mjs"
   },
   "devDependencies": {
     "typescript": "^5.6.0"

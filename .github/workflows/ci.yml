@@ -32,6 +32,10 @@ jobs:
         run: npm ci
         working-directory: packages/memory-toolpkg
 
+      - name: Check runtime syntax and legacy TypeScript
+        run: npm run typecheck
+        working-directory: packages/memory-toolpkg
+
       - name: Test ToolPkg runtime
         run: npm test
         working-directory: packages/memory-toolpkg
