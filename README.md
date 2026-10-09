@@ -17,7 +17,7 @@
 
 ## 安装
 
-1. 从 GitHub Releases 下载 `claude-local-memory.toolpkg`。
+1. 下载 [0.1.57 测试版安装包](releases/claude-local-memory-0.1.57.toolpkg)，或从 GitHub Releases 查看版本说明。
 2. 在 Operit 中导入并启用 ToolPkg。
 3. 打开“本地记忆设置”，确认“记忆册加载”已经开启。
 4. 如需自动生成候选，再单独开启“收集对话碎片”。
